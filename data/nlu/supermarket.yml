@@ -1,0 +1,201 @@
+version: "3.1"
+nlu:
+- intent: go_supermarket
+  examples: |
+    - I want to go to the [supermarket](location)
+    - I am going to the [supermarket](location)
+    - Go to the [supermarket](location)
+    - I want to go [supermarket](location)
+    - Go [supermarket](location)
+
+
+##########################supermarket story1##########################
+
+- intent: buy_goods
+  examples: |
+    - buy [daily goods](item)
+    - buy [goods](item)
+    - buy the [daily goods](item)
+
+- intent: goods_shelf
+  examples: |
+    - At the daily goods shelf
+    - At daily goods shelf
+    - At the day goods shelf
+    - On the shelves of everday goods
+
+- intent: moving_boxes
+  examples: |
+    - Tom sees a salesman moving boxes into the storehouse
+    - Tom see salesman move boxes into the storehouse
+    - Tom sees a sale man moving box into storehouse
+    - Tom saw a salesman carrying boxes into the warehouse
+
+- intent: lot_box
+  examples: |
+    - She has a lot of boxed in her hands
+    - She had lot of boxed in her hands
+    - She has a lot of boxes in her hands
+    - She has a lot of boxed in hand
+    - She had a lot of boxes in her hand
+
+- intent: box_falls
+  examples: |
+    - “Oh-O”! One small box falls off from her hands
+    - Oh One small box falls off from her hands
+    - “Oh-O”! One small box fall off from hands
+    - Oh One box falls off from her hand
+    - Oh oh a little box fell from her hand
+
+- intent: not_pick
+  examples: |
+    - The salesman can not pick it up
+    - The sale man can not pick up it
+    - salesman can't pick it up
+    - The salesman couldn't pick it up
+    - The salesman couldn't pick up
+
+- intent: pick_small
+  examples: |
+    - So Tom helps her pick up the small box
+    - So Tom help her pick up small box
+    - Tom helps her pick up the box
+    - So Tom helped her pick up the little box
+
+- intent: little_badge
+  examples: |
+    - The salesman thanks Tom for his help so she gave Tom the Badge of 'Little helper'
+    - The salesman thank Tom for help so she gave Tom the Badge of Little helper
+    - salesman thanks Tom for his help she gave Tom the Badge of 'Little helper'
+    - The salesman thanked Tom for his help, so she gave Tom the badge of "Little Helper"
+    - The salesman thanked Tom for his help so she gave Tom the badge of Little Helper
+
+
+##########################supermarket story2##########################
+
+- intent: buy_snacks
+  examples: |
+    - buy [snacks](item)
+    - buy [snack](item)
+    - buy the [snacks](item)
+
+
+- intent: snack_shelf
+  examples: |
+    - At the snack shelf
+    - At snack shelf
+
+- intent: look_around
+  examples: |
+    - Tom sees a man looking around for something
+    - Tom sees a man look around for something
+    - Tom see man looking around for something
+    - Tom saw a man looking around for something
+
+- intent: potato
+  examples: |
+    - The man wants potato chips and chocolate but he can not find them
+    - The man want potato chips and chocolate but he can not find them
+    - The man wants potato chips and chocolate but he can't find them
+    - The man wants potato and chocolate but he can not find them
+    - The man wanted potato chips and chocolate, but he couldn't find them
+
+- intent: find_snacks
+  examples: |
+    - Tom helps him to find the snacks
+    - Tom helps him to find snacks
+    - Tom help him to find the snack
+    - Tom helps him find the snacks
+    - Tom helped him find a snack
+
+- intent: big_smile
+  examples: |
+    - The man shows a big smile on his face after finding the snacks he wants
+    - The man shows big smile on his face after finding snacks he wants
+    - The man shows a smile on face after finding the snacks he wants
+    - The man had a big smile on his face after finding the snack he wanted
+    - The man had big smile on face after finding snack he want
+
+- intent: Badge_of_Kindness
+  examples: |
+    - He want to thank Tom for his help so he gives Tom the Badge of Kindness
+    - He want thank Tom for help so he gives Tom the badge of kindness
+    - He want to thank Tom for his help he gives Tom the Badge Kindness
+    - He want to thank Tom for his help so he gives Tom the Badge of Kind
+    - He want to thank Tom for help he gives Tom the Badge of Kindness
+    - He want thank Tom for his help so he give Tom the Badge of Kindness
+    - He wanted to thank Tom for his help, so he gave Tom a badge of kindness
+
+
+##########################supermarket story3##########################
+
+- intent: buy_drinks
+  examples: |
+    - buy [drinks](item)
+    - buy [drink](item)
+    - buy the [drinks](item)
+
+- intent: drinks_shelf
+  examples: |
+    - At the drinks shelf
+    - At drinks shelf
+
+- intent: boy_cry
+  examples: |
+    - Tom sees a boy crying
+    - Tom see boy crying
+    - Tom see boy cry
+    - Tom saw a boy crying
+
+- intent: green_shirt
+  examples: |
+    - The boy wears a green t-shirt and blue pants
+    - The boy wears green t-shirt blue pants
+    - boy wear a green t-shirt and blue pants
+    - The boy wears green T-shirt blue pants
+
+- intent: sad_see
+  examples: |
+    - He is very sad and wants to see his mom
+    - He is sad and wants see his mom
+    - He's very sad and wants see his mom
+    - He was sad and wanted to meet his mother
+
+- intent: take_boy
+  examples: |
+    - Tom takes the boy to the service counter
+    - Tom takes boy to the service counter
+    - Tom takes the boy to service counter
+    - Tom took the boy to the service counter
+
+- intent: wait_there
+  examples: |
+    - The boy's Mom is waiting there
+    - The boy's Mom waiting there
+    - The boy's Mom is wait there
+    - The boy's mother was there waiting
+    - The boy's mother was waiting there
+    - The mother was there waiting
+    - The boy mother was there waiting
+
+- intent: run_right
+  examples: |
+    - The boy runs to his mom right away
+    - The boy runs his mom right away
+    - The boy immediately ran to find his his mom
+
+- intent: happy_thank
+  examples: |
+    - The boy's family is happy and thanks Tom
+    - The boy family is happy and thank Tom
+    - The boy's family happy and thanks Tom
+    - The boy's family was happy and thanked Tom
+
+- intent: Badge_Superhero
+  examples: |
+    - They give Tom the Badge of Superhero
+    - They give Tom the badge of superhero
+    - They give Tom badge of superhero
+    - They gave Tom the badge of superhero
+    - They gave Tom badge superhero
+

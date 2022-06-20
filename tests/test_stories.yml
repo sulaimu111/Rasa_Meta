@@ -1,0 +1,453 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: happy path 1
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      amazing
+    intent: mood_great
+  - action: utter_happy
+
+- story: happy path 2
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      amazing
+    intent: mood_great
+  - action: utter_happy
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: sad path 1
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not good
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      yes
+    intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not good
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      not really
+    intent: deny
+  - action: utter_goodbye
+
+- story: sad path 3
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      very terrible
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      no
+    intent: deny
+  - action: utter_goodbye
+
+- story: say goodbye
+  steps:
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - user: |
+      are you a bot?
+    intent: bot_challenge
+  - action: utter_iamabot
+
+
+
+##############################################################################
+
+- story: park path 1
+  steps:
+  - user: |
+      go to the [park](location)
+    intent: go_park
+  - action: utter_park_do_next
+  - user: |
+      play on the slide
+    intent: play_slide
+  - action: utter_when_playing
+  - user: |
+      When Mark is playing he hears a sound from the grass
+    intent: when_playing
+  - action: utter_lose_puppy
+  - user: |
+       it is a lost puppy
+    intent: lose_puppy
+  - action: utter_yellow_dog
+  - user: |
+      the puppy is a yellow dog
+    intent: yellow_dog
+  - action: utter_big_eyes
+  - user: |
+      It has big eyes and ears.
+    intent: big_eyes
+  - action: utter_find_owner
+  - user: |
+      Mark decides to help it find its owner
+    intent: find_owner
+  - action: utter_looking_around
+  - user: |
+      After a few minutes Mark sees a man looking around.
+    intent: looking_around
+  - action: utter_dog_owner
+  - user: |
+      Wow he is the dog's owner.
+    intent: dog_owner
+  - action: utter_thank_mark
+  - user: |
+      In order to thank Mark for his help
+    intent: thank_mark
+  - action: utter_Badge_Kindness
+  - user: |
+      The owner gives him the Badge of Kindness
+    intent: Badge_Kindness
+  - action: utter_park_home
+
+
+- story: park path 2
+  steps:
+  - user: |
+      go to the [park](location)
+    intent: go_park
+  - action: utter_park_do_next
+  - user: |
+      go jogging
+    intent: go_jogging
+  - action: utter_when_jogging
+  - user: |
+      When Jack is jogging he hears a sound
+    intent: when_jogging
+  - action: utter_fall_downing
+  - user: |
+      An old man next to him fall down
+    intent: fall_downing
+  - action: utter_man_wears
+  - user: |
+      The old man wears a blue shirt and black pants
+    intent: man_wears
+  - action: utter_help_up
+  - user: |
+      Jack quickly helps him up
+    intent: help_up
+  - action: utter_man_okay
+  - user: |
+      Luckily the old man is okay
+    intent: man_okay
+  - action: utter_Badge_Little_Helper
+  - user: |
+      The old man thanked Jack for his help and gives him the Badge of Little Helper
+    intent: Badge_Little_Helper
+  - action: utter_park_home
+
+
+
+- story: park path 3
+  steps:
+  - user: |
+      go to the [park](location)
+    intent: go_park
+  - action: utter_park_do_next
+  - user: |
+      build a sand castle
+    intent: build_sand_castle
+  - action: utter_when_build
+  - user: |
+      When Sam is building a sand castle he sees a lot of garbage in the sandpit
+    intent: when_build
+  - action: utter_clean_up
+  - user: |
+      Sam goes to clean it up
+    intent: clean_up
+  - action: utter_pick_trash
+  - user: |
+      He picks up a trash bag and a paper bag
+    intent: pick_trash
+  - action: utter_woman_sees
+  - user: |
+      When he is cleaning the sandpit a woman sees him
+    intent: woman_sees
+  - action: utter_Badge_Nature_lover
+  - user: |
+      She thinks Sam is a good kid so she gives him the Badge of Nature-lover
+    intent: Badge_Nature_lover
+  - action: utter_park_home
+
+
+
+- story: restaurant path 1
+  steps:
+  - user: |
+      go to the [restaurant](location)
+    intent: go_restaurant
+  - action: utter_restaurant_do_next
+  - user: |
+      eat [hamburger](food)
+    intent: eat_hamburger
+  - action: utter_sees_wallet
+  - user: |
+      After Tony sits down he sees a wallet on the seat
+    intent: sees_wallet
+  - action: utter_wallet_red
+  - user: |
+      The wallet is red and long
+    intent: wallet_red
+  - action: utter_brings_wallet
+  - user: |
+      Tony brings the wallet to the counter
+    intent: brings_wallet
+  - action: utter_stand_says
+  - user: |
+      A man standing at the counter says
+    intent: stand_says
+  - action: utter_found_it
+  - user: |
+      That is my wallet You found it Thank you
+    intent: found_it
+  - action: utter_Badge_Honesty
+  - user: |
+      The man gives Tony  the Badge of Honesty to thank him
+    intent: Badge_Honesty
+  - action: utter_restaurant_home
+
+
+- story: restaurant path 2
+  steps:
+  - user: |
+      go to the [restaurant](location)
+    intent: go_restaurant
+  - action: utter_restaurant_do_next
+  - user: |
+      eat [bento](food)
+    intent: eat_bento
+  - action: utter_in_lunch_box
+  - user: |
+      Right in front of the Lunch box shop Tony sees a homeless man walking around
+    intent: in_lunch_box
+  - action: utter_man_tall
+  - user: |
+      The man is tall and skinny
+    intent: man_tall
+  - action: utter_find_man
+  - user: |
+      After finding out the homeless man did no eat anything for days
+    intent: find_man
+  - action: utter_buy_box
+  - user: |
+      Tony buys a lunch box for him
+    intent: buy_box
+  - action: utter_man_happy
+  - user: |
+      The man is very happy
+    intent: man_happy
+  - action: utter_thanks_tony
+  - user: |
+      He thanks Tony for helping him
+    intent: thanks_tony
+  - action: utter_Badge_Goodwill
+  - user: |
+      so he gives Tony the Badge of Goodwill
+    intent: Badge_Goodwill
+  - action: utter_restaurant_home
+
+
+- story: restaurant path 3
+  steps:
+  - user: |
+      go to the [restaurant](location)
+    intent: go_restaurant
+  - action: utter_restaurant_do_next
+  - user: |
+      eat [Ramen](food)
+    intent: eat_ramen
+  - action: utter_on_floor
+  - user: |
+      In the Ramen shop a staff spilled the Ramen on the floor
+    intent: on_floor
+  - action: utter_soup_all
+  - user: |
+      The soup and noodle are all on the floor
+    intent: soup_all
+  - action: utter_good_hurt
+  - user: |
+      It is good that no one is hurt
+    intent: good_hurt
+  - action: utter_help_staff
+  - user: |
+      Tony gets up from his seat and helps the staff to clean the floor
+    intent: help_staff
+  - action: utter_tony_help
+  - user: |
+      The staff is thankful of Tony’s help
+    intent: tony_help
+  - action: utter_decide_give
+  - user: |
+      and decided to give Tony the Badge of Kindness
+    intent: decide_give
+  - action: utter_restaurant_home
+
+
+
+
+- story: supermarket path 1
+  steps:
+  - user: |
+      go to the [supermarket](location)
+    intent: go_supermarket
+  - action: utter_supermarket_do_next
+  - user: |
+      buy [daily goods](item)
+    intent: buy_goods
+  - action: utter_goods_shelf
+  - user: |
+      At the daily goods shelf
+    intent: goods_shelf
+  - action: utter_moving_boxes
+  - user: |
+      Tom sees a salesman moving boxes into the storehouse
+    intent: moving_boxes
+  - action: utter_lot_box
+  - user: |
+      She has a lot of boxed in her hands
+    intent: lot_box
+  - action: utter_box_falls
+  - user: |
+      Oh One small box falls off from her hands
+    intent: box_falls
+  - action: utter_not_pick
+  - user: |
+      The salesman can not pick it up
+    intent: not_pick
+  - action: utter_pick_small
+  - user: |
+      So Tom helps her pick up the small box
+    intent: pick_small
+  - action: utter_little_badge
+  - user: |
+      The salesman thanks Tom for his help so she gave Tom the Badge of Little helper
+    intent: little_badge
+  - action: utter_supermarket_home
+  
+
+
+- story: supermarket path 2
+  steps:
+  - user: |
+      go to the [supermarket](location)
+    intent: go_supermarket
+  - action: utter_supermarket_do_next
+  - user: |
+      buy [snacks](item)
+    intent: buy_snacks
+  - action: utter_snack_shelf
+  - user: |
+      At the snack shelf
+    intent: snack_shelf
+  - action: utter_look_around
+  - user: |
+      Tom sees a man looking around for something
+    intent: look_around
+  - action: utter_potato
+  - user: |
+      The man wants potato chips and chocolate but he can not find them
+    intent: potato
+  - action: utter_find_snacks
+  - user: |
+      Tom helps him to find the snacks
+    intent: find_snacks
+  - action: utter_big_smile
+  - user: |
+      The man shows a big smile on his face after finding the snacks he wants
+    intent: big_smile
+  - action: utter_Badge_of_Kindness
+  - user: |
+      He want to thank Tom for his help so he gives Tom the Badge of Kindness
+    intent: Badge_of_Kindness
+  - action: utter_supermarket_home
+
+
+- story: supermarket path 3
+  steps:
+  - user: |
+      go to the [supermarket](location)
+    intent: go_supermarket
+  - action: utter_supermarket_do_next
+  - user: |
+      buy [drinks](item)
+    intent: buy_drinks
+  - action: utter_drinks_shelf
+  - user: |
+      At the drinks shelf
+    intent: drinks_shelf
+  - action: utter_boy_cry
+  - user: |
+      Tom sees a boy crying
+    intent: boy_cry
+  - action: utter_green_shirt
+  - user: |
+      The boy wears a green t-shirt and blue pants
+    intent: green_shirt
+  - action: utter_sad_see
+  - user: |
+      He is very sad and wants to see his mom
+    intent: sad_see
+  - action: utter_take_boy
+  - user: |
+      Tom takes the boy to the service counter
+    intent: take_boy
+  - action: utter_wait_there
+  - user: |
+      The boy’s Mom is waiting there
+    intent: wait_there
+  - action: utter_run_right
+  - user: |
+      The boy runs to his mom right away
+    intent: run_right
+  - action: utter_happy_thank
+  - user: |
+      The boy’s family is happy and thanks Tom
+    intent: happy_thank
+  - action: utter_Badge_Superhero
+  - user: |
+      They give Tom the Badge of Superhero
+    intent: Badge_Superhero
+  - action: utter_supermarket_home
+
+

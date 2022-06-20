@@ -1,0 +1,193 @@
+version: "3.1"
+nlu:
+- intent: go_park
+  examples: |
+    - I want to go to the [park](location)
+    - I am going to the [park](location)
+    - Go to the [park](location)
+#    - I want to go [park](location)
+#    - Go [park](location)
+
+
+
+##########################park story1##########################
+
+- intent: play_slide
+  examples: |
+    - play on the slide
+    - playing on the slide
+    - play on slide
+    - playing on slide
+    - play the slide
+    - playing the slide
+    - pray on the slide
+    - Play with the slides
+
+- intent: when_playing
+  examples: |
+    - when Mark is playing, he hears a sound from the grass
+    - when Mark is playing he hears a sound from the grass
+    - when Mark is praying he hears a sound from the grass
+    - when Mark is playing he hears the sound from the grass
+    - when Mark playing he hear the sound from the grass
+    - when Mark is playing he hear a sound from the grass
+    - when mark is playing, he hears a sound from the grass
+    - when mark is playing he hears a sound from the grass
+    - when mark is praying he hears a sound from the grass
+    - when mark is playing he hears the sound from the grass
+    - when mark playing he hear the sound from the grass
+    - when mark is playing he hear a sound from the grass
+    - While Mark was playing, he heard a voice coming from the grass.
+    
+- intent: lose_puppy
+  examples: |
+    - It is a lost puppy
+    - It is lost puppy
+    - It's a lost puppy
+    - It's lost puppy
+
+- intent: yellow_dog
+  examples: |
+    - The puppy is a yellow dog
+    - The puppy is yellow
+    - The puppy is yellow dog
+
+- intent: big_eyes
+  examples: |
+    - It has big eyes and ears
+    - It has ears and big eyes
+    - It has large eyes and ears
+
+- intent: find_owner
+  examples: |
+    - Mark decides to help it find its owner
+    - Mark decide to help it find its owner
+    - Mark decides to help it find owner
+    - Mark decided to help it find its owner
+
+- intent: looking_around
+  examples: |
+    - After a few minutes Mark sees a man looking around.
+    - After a few minutes Mark see a man looking around.
+    - After a few minutes, Mark sees man looking around.
+    - After few minutes, Mark sees a man looking around.
+    - A few minutes later, Mark saw a man looking around.
+
+- intent: dog_owner
+  examples: |
+    - wow he is the dog's owner
+    - wow he is the dog owner
+    - wow he is a dog's owner
+    - wow he is dog's owner
+    - wow he's a dog's owner
+    - wow he is dog owner
+    - Wow, he's the owner of the dog
+
+- intent: thank_mark
+  examples: |
+    - in order to thank Mark for his help
+    - in order to thank Mark for help
+    - order to thank Mark for his help
+    - in order to thank mark for his help
+    - in order to thank mark for help
+    - order to thank Mark mark his help
+    - To thank Mark for his help
+    
+- intent: Badge_Kindness
+  examples: |
+    - the owner gives him the Badge of Kindness
+    - the owner gives him the badge of kindness
+    - the owner give him badge of kindness
+    - The owner gave him a badge of goodwill
+
+
+##########################park story2##########################
+
+- intent: go_jogging
+  examples: |
+    - go jogging
+    - go to jogging
+
+- intent: when_jogging
+  examples: |
+    - When Jack is jogging he hears a sound
+    - When Jack is jogging he hears sound
+    - When Jack is jogging he hears the sound
+    - When Jack's jogging he hears a sound
+    - As Jack jogged, he heard a voice
+
+- intent: fall_downing
+  examples: |
+    - An old man next to him fall down
+    - An old man next him fall down
+    - The old man next to him fell
+
+- intent: man_wears
+  examples: |
+    - The old man wears a blue shirt and black pants
+    - The old man wears blue shirt and black pants
+    - The old man wears the blue shirt and black pants
+
+- intent: help_up
+  examples: |
+    - Jack quickly helps him up
+    - Jack helps him up
+    - Jack quickly helped him get up
+
+- intent: man_okay
+  examples: |
+    - Luckily the old man is okay
+    - luckily the old man is okay
+    - luckily the old man okay
+    - Luckily the old man was fine
+
+- intent: Badge_Little_Helper
+  examples: |
+    - The old man thanked Jack for his help and gives him the Badge of Little Helper
+    - The old man thanked Jack for help and gives him the badge of little helper
+    - The old man thank Jack help and give him the badge of little helper
+    - The old man thanked Jack for his help and gave him the little helper badge
+
+
+##########################park story3##########################
+
+- intent: build_sand_castle
+  examples: |
+    - build a sand castle
+    - build the sand castle
+    - build sand castle
+    - build castle
+
+- intent: when_build
+  examples: |
+    - When Sam is building a sand castle he sees a lot of garbage in the sandpit
+    - When Sam is building the sand castle he sees a lot of garbage in the sandpit
+    - When Sam is building sand castle he sees a lot of garbage in the sandpit
+    - When Sam building sand castle he see a lot of garbage in the sandpit
+    - When Sam builds a sandcastle, he sees a lot of trash in the bunker
+
+- intent: clean_up
+  examples: |
+    - Sam goes to clean it up
+    - Sam goes to clean up
+    - Sam went to clean it up
+
+- intent: pick_trash
+  examples: |
+    - He picks up a trash bag and a paper bag
+    - He picks up the trash bag and the paper bag
+    - He picks up trash bag and paper bag
+    - He picked up a garbage bag and a paper bag
+
+- intent: woman_sees
+  examples: |
+    - When he is cleaning the sandpit a woman sees him
+    - When he is cleaning the sandpit the woman sees him
+    - As he cleaned the bunker, a woman saw him
+
+- intent: Badge_Nature_lover
+  examples: |
+    - She thinks Sam is a good kid so she gives him the Badge of Nature lover
+    - She thinks Sam is a good kid so she gives him the badge of nature lover
+    - She thinks Sam is good kid so she gives him the badge of nature lover
+    - She thought Sam was a good boy, so she gave him the badge of a nature lover.

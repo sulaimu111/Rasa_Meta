@@ -1,0 +1,293 @@
+version: "3.1"
+
+# config:
+#   store_entities_as_slots: true
+
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - go_park
+  # - go_library
+  # - go_school
+  - play_slide
+  - when_playing
+  - lose_puppy
+  - yellow_dog
+  - big_eyes
+  - find_owner
+  - looking_around
+  - dog_owner
+  - thank_mark
+  - Badge_Kindness
+  - go_jogging
+  - when_jogging
+  - fall_downing
+  - man_wears
+  - help_up
+  - man_okay
+  - Badge_Little_Helper
+  - build_sand_castle
+  - when_build
+  - clean_up
+  - pick_trash
+  - woman_sees
+  - Badge_Nature_lover
+  - go_restaurant
+  - eat_hamburger
+  - sees_wallet
+  - wallet_red
+  - brings_wallet
+  - stand_says
+  - found_it
+  - Badge_Honesty
+  - eat_bento
+  - in_lunch_box
+  - man_tall
+  - find_man
+  - buy_box
+  - man_happy
+  - thanks_tony
+  - Badge_Goodwill
+  - eat_ramen
+  - on_floor
+  - soup_all
+  - good_hurt
+  - help_staff
+  - tony_help
+  - decide_give
+  - go_supermarket
+  - buy_goods
+  - goods_shelf
+  - moving_boxes
+  - lot_box
+  - box_falls
+  - not_pick
+  - pick_small
+  - little_badge
+  - buy_snacks
+  - snack_shelf
+  - look_around
+  - potato
+  - find_snacks
+  - big_smile
+  - Badge_of_Kindness
+  - buy_drinks
+  - drinks_shelf
+  - boy_cry
+  - green_shirt
+  - sad_see
+  - take_boy
+  - wait_there
+  - run_right
+  - happy_thank
+  - Badge_Superhero
+entities:
+  # - name
+  - location
+  - food
+  - item
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+
+########################################################################################################################################################
+
+  # park
+  utter_park_do_next:
+  - text: What does John do next? Play on the slide, go jogging or build a sand castle?
+
+  # park slide
+  utter_when_playing:
+  - text: When Mark is playing, he hears a sound from the grass.
+  utter_lose_puppy:
+  - text: It is a lost puppy.
+  utter_yellow_dog:
+  - text: The puppy is a yellow dog.
+  utter_big_eyes:
+  - text: It has big eyes and ears.
+  utter_find_owner:
+  - text: Mark decides to help it find its owner.
+  utter_looking_around:
+  - text: After a few minutes, Mark sees a man looking around.
+  utter_dog_owner:
+  - text: Wow! he is the dog's owner.
+  utter_thank_mark:
+  - text: In order to thank Mark for his help.
+  utter_Badge_Kindness:
+  - text: The owner gives him the Badge of Kindness.
+
+  # park jogging
+  utter_when_jogging:
+  - text: When Jack is jogging, he hears a sound “ai-yo”.
+  utter_fall_downing:
+  - text: An old man next to him fall down.
+  utter_man_wears:
+  - text: The old man wears a blue shirt and black pants.
+  utter_help_up:
+  - text: Jack quickly helps him up.
+  utter_man_okay:
+  - text: Luckily, the old man is okay.
+  utter_Badge_Little_Helper:
+  - text: The old man thanked Jack for his help and gives him the Badge of “Little Helper”.
+
+  # park build a sand castle
+  utter_when_build:
+  - text: When Sam is building a sand castle, he sees a lot of garbage in the sandpit.
+  utter_clean_up:
+  - text: Sam goes to clean it up.
+  utter_pick_trash:
+  - text: He picks up a trash bag and a paper bag.
+  utter_woman_sees:
+  - text: When he is cleaning the sandpit, a woman sees him.
+  utter_Badge_Nature_lover:
+  - text: She thinks Sam is a good kid so she gives him the Badge of “Nature-lover”.
+  utter_park_home:
+  - text: Good job! You are finish the park story. Let's go home!
+
+
+
+
+# restaurant
+  utter_restaurant_do_next:
+  - text: What does he do next? Eat hamburger, bento, or Ramen?
+
+# eat hamburger
+  utter_sees_wallet:
+  - text: After Tony sits down, he sees a wallet on the seat.
+  utter_wallet_red:
+  - text: The wallet is red and long.
+  utter_brings_wallet:
+  - text: Tony brings the wallet to the counter.
+  utter_stand_says:
+  - text: A man standing at the counter says.
+  utter_found_it:
+  - text: That is my wallet! You found it! Thank you!
+  utter_Badge_Honesty:
+  - text: The man gives Tony  the Badge of Honesty to thank him.
+
+# eat Lunch box
+  utter_in_lunch_box:
+  - text: Right in front of the Lunch box shop, Tony sees a homeless man walking around.
+  utter_man_tall:
+  - text: The man is tall and skinny.
+  utter_find_man:
+  - text: After finding out the homeless man did no eat anything for days,
+  utter_buy_box:
+  - text: Tony buys a lunch box for him.
+  utter_man_happy:
+  - text: The man is very happy.
+  utter_thanks_tony:
+  - text: He thanks Tony for helping him,
+  utter_Badge_Goodwill:
+  - text: so he gives Tony the Badge of Goodwill.
+
+# eat Ramen
+  utter_on_floor:
+  - text: In the Ramen shop, a staff spilled the Ramen on the floor.
+  utter_soup_all:
+  - text: The soup and noodle are all on the floor.
+  utter_good_hurt:
+  - text: It is good that no one is hurt.
+  utter_help_staff:
+  - text: Tony gets up from his seat and helps the staff to clean the floor.
+  utter_tony_help:
+  - text: The staff is thankful of Tony’s help,
+  utter_decide_give:
+  - text: and decided to give Tony the Badge of Kindness.
+  utter_restaurant_home:
+  - text: Good job! You are finish the restaurant story. Let's go home!
+
+
+
+
+# supermarket
+  utter_supermarket_do_next:
+  - text: What does he do next? Buy daily goods, snacks or drinks?
+
+# buy goods
+  utter_goods_shelf:
+  - text: At the daily goods shelf,
+  utter_moving_boxes:
+  - text: Tom sees a salesman moving boxes into the storehouse.
+  utter_lot_box:
+  - text: She has a lot of boxed in her hands.
+  utter_box_falls:
+  - text: “Oh-O”! One small box falls off from her hands.
+  utter_not_pick:
+  - text: The salesman can not pick it up.
+  utter_pick_small:
+  - text: So Tom helps her pick up the small box.
+  utter_little_badge:
+  - text: The salesman thanks Tom for his help so she gave Tom the Badge of 'Little helper'.
+
+# buy snacks
+  utter_snack_shelf:
+  - text: At the snack shelf,
+  utter_look_around:
+  - text: Tom sees a man looking around for something.
+  utter_potato:
+  - text: The man wants potato chips and chocolate but he can not find them.
+  utter_find_snacks:
+  - text: Tom helps him to find the snacks.
+  utter_big_smile:
+  - text: The man shows a big smile on his face after finding the snacks he wants.
+  utter_Badge_of_Kindness:
+  - text: He want to thank Tom for his help, so he gives Tom the Badge of “Kindness”.
+
+# buy drinks
+  utter_drinks_shelf:
+  - text: At the drinks shelf,
+  utter_boy_cry:
+  - text: Tom sees a boy crying.
+  utter_green_shirt:
+  - text: The boy wears a green t-shirt and blue pants.
+  utter_sad_see:
+  - text: He is very sad and wants to see his mom.
+  utter_take_boy:
+  - text: Tom takes the boy to the service counter.
+  utter_wait_there:
+  - text: The boy’s Mom is waiting there.
+  utter_run_right:
+  - text: The boy runs to his mom right away.
+  utter_happy_thank:
+  - text: The boy’s family is happy and thanks Tom.
+  utter_Badge_Superhero:
+  - text: They give Tom “the Badge of Superhero”.
+  utter_supermarket_home:
+  - text: Good job! You are finish the supermarket story. Let's go home!
+
+
+
+########################################################################################################################################################
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

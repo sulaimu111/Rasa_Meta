@@ -1,0 +1,65 @@
+stories:
+- story: supermarket story 1
+  steps:
+  - intent: go_supermarket
+  - action: utter_supermarket_do_next
+  - intent: buy_goods
+  - action: utter_goods_shelf
+  - intent: goods_shelf
+  - action: utter_moving_boxes
+  - intent: moving_boxes
+  - action: utter_lot_box
+  - intent: lot_box
+  - action: utter_box_falls
+  - intent: box_falls
+  - action: utter_not_pick
+  - intent: not_pick
+  - action: utter_pick_small
+  - intent: pick_small
+  - action: utter_little_badge
+  - intent: little_badge
+  - action: utter_supermarket_home
+
+- story: supermarket story 2
+  steps:
+  - intent: go_supermarket
+  - action: utter_supermarket_do_next
+  - intent: buy_snacks
+  - action: utter_snack_shelf
+  - intent: snack_shelf
+  - action: utter_look_around
+  - intent: look_around
+  - action: utter_potato
+  - intent: potato
+  - action: utter_find_snacks
+  - intent: find_snacks
+  - action: utter_big_smile
+  - intent: big_smile
+  - action: utter_Badge_of_Kindness
+  - intent: Badge_of_Kindness
+  - action: utter_supermarket_home
+
+- story: supermarket story 3
+  steps:
+  - intent: go_supermarket
+  - action: utter_supermarket_do_next
+  - intent: buy_drinks
+  - action: utter_drinks_shelf
+  - intent: drinks_shelf
+  - action: utter_boy_cry
+  - intent: boy_cry
+  - action: utter_green_shirt
+  - intent: green_shirt
+  - action: utter_sad_see
+  - intent: sad_see
+  - action: utter_take_boy
+  - intent: take_boy
+  - action: utter_wait_there
+  - intent: wait_there
+  - action: utter_run_right
+  - intent: run_right
+  - action: utter_happy_thank
+  - intent: happy_thank
+  - action: utter_Badge_Superhero
+  - intent: Badge_Superhero
+  - action: utter_supermarket_home

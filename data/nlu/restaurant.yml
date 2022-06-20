@@ -1,0 +1,164 @@
+version: "3.1"
+nlu:
+- intent: go_restaurant
+  examples: |
+    - I want to go to the [restaurant](location)
+    - I am going to the [restaurant](location)
+    - Go to the [restaurant](location)
+    - I want to go [restaurant](location)
+    - Go [restaurant](location)
+
+
+##########################restaurant story1##########################
+
+- intent: eat_hamburger
+  examples: |
+    - eat [hamburger](food)
+    - he wants to eat [hamburger](food)
+
+- intent: sees_wallet
+  examples: |
+    - After Tony sits down he sees a wallet on the seat
+    - After Tony sit down he see a wallet on the seat
+    - After Tony sits he sees wallet on the seat
+    - After Tony sat down, he saw a wallet on the seat.
+
+- intent: wallet_red
+  examples: |
+    - The wallet is red and long
+    - The wallet red and long
+
+- intent: brings_wallet
+  examples: |
+    - Tony brings the wallet to the counter
+    - Tony bring wallet to the counter
+    - Tony brings wallet to counter
+    - Tony brought wallet to the counter
+
+- intent: stand_says
+  examples: |
+    - A man standing at the counter says
+    - the man standing at the counter says
+    - the man standing at counter say
+    - man stand at counter says
+    - A man standing at the counter said
+
+- intent: found_it
+  examples: |
+    - That is my wallet! You found it! Thank you!
+    - That is my wallet You found it Thank you
+    - That's my wallet! You found it! Thank you!
+
+- intent: Badge_Honesty
+  examples: |
+    - The man gives Tony the Badge of Honesty to thank him
+    - The man give Tony the badge of honesty to thank him
+    - The man gives Tony Badge of Honesty thank him
+    - The man gave Tony an honest badge to thank him.
+
+
+##########################restaurant story2##########################
+
+- intent: eat_bento
+  examples: |
+    - eat [bento](food)
+    - eat [Lunch box](food)
+    - he wants to eat [bento](food)
+    - he wants to eat [Lunch box](food)
+
+- intent: in_lunch_box
+  examples: |
+    - Right in front of the Lunch box shop, Tony sees a homeless man walking around
+    - Right in front of the Lunch box shop Tony see a homeless man walking around
+    - Right in front of Lunch box shop Tony see homeless man walk around
+    - Just in front of the bento shop, Tony saw a homeless man walking around
+
+- intent: man_tall
+  examples: |
+    - The man is tall and skinny
+    - The man tall and skinny
+    - The man was tall and thin
+
+- intent: find_man
+  examples: |
+    - After finding out the homeless man did no eat anything for days
+    - After finding out homeless man did no eat anything for days
+    - After finding out that the homeless had not eaten anything for several days
+
+- intent: buy_box
+  examples: |
+    - Tony buys a lunch box for him
+    - Tony buy lunch box for him
+    - Tony bought him a lunch box
+    - Tony bought him a bento
+
+- intent: man_happy
+  examples: |
+    - The man is very happy
+    - The man very happy
+    - The man is happy
+    - The man was very happy
+
+- intent: thanks_tony
+  examples: |
+    - He thanks Tony for helping him
+    - He thank Tony for helping him
+    - He thanks Tony helping him
+    - He thanked Tony for helping him
+    - He thanked Tony for help him
+
+- intent: Badge_Goodwill
+  examples: |
+    - so he gives Tony the Badge of Goodwill
+    - so he give Tony the Badge of Goodwill
+    - So he gave Tony a badge of goodwill
+    - So he gave Tony a badge of good
+    - So he gave Tony badge goodwill
+    - So he gave Tony bag of goodwill
+
+
+##########################restaurant story3##########################
+
+- intent: eat_ramen
+  examples: |
+    - eat [Ramen](food)
+    - he wants to eat [Ramen](food)
+
+- intent: on_floor
+  examples: |
+    - In the Ramen shop a staff spilled the Ramen on the floor
+    - In the Ramen shop staff spill the Ramen on the floor
+    - At a ramen shop, a staff member sprinkles ramen noodles on the floor
+
+- intent: soup_all
+  examples: |
+    - The soup and noodle are all on the floor
+    - The soup and noodle are on the floor
+    - The soup and noodles are on the floor
+
+- intent: good_hurt
+  examples: |
+    - It is good that no one is hurt
+    - It is good that no one hurt
+    - It's good that no one gets hurt
+
+- intent: help_staff
+  examples: |
+    - Tony gets up from his seat and helps the staff to clean the floor
+    - Tony gets up from his seat and help staff to clean the floor
+    - Tony gets up from his seat and help staff clean the floor
+    - Tony got up from his seat and helped the staff clean the floor
+
+- intent: tony_help
+  examples: |
+    - The staff is thankful of Tony’s help
+    - The staff is thankful of Tony help
+    - The staff is thank of Tony’s help
+    - The staff appreciated Tony for his help
+
+- intent: decide_give
+  examples: |
+    - and decided to give Tony the Badge of Kindness
+    - and decided to give Tony the badge of kindness
+    - and decided give Tony the badge of kindness
+    - And decide to give Tony a badge of kindness

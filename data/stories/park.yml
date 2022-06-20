@@ -1,0 +1,61 @@
+stories:
+- story: park story 1
+  steps:
+  - intent: go_park
+  - action: utter_park_do_next
+  - intent: play_slide
+  - action: utter_when_playing
+  - intent: when_playing
+  - action: utter_lose_puppy
+  - intent: lose_puppy
+  - action: utter_yellow_dog
+  - intent: yellow_dog
+  - action: utter_big_eyes
+  - intent: big_eyes
+  - action: utter_find_owner
+  - intent: find_owner
+  - action: utter_looking_around
+  - intent: looking_around
+  - action: utter_dog_owner
+  - intent: dog_owner
+  - action: utter_thank_mark
+  - intent: thank_mark
+  - action: utter_Badge_Kindness
+  - intent: Badge_Kindness
+  - action: utter_park_home
+
+- story: park story 2
+  steps:
+  - intent: go_park
+  - action: utter_park_do_next
+  - intent: go_jogging
+  - action: utter_when_jogging
+  - intent: when_jogging
+  - action: utter_fall_downing
+  - intent: fall_downing
+  - action: utter_man_wears
+  - intent: man_wears
+  - action: utter_help_up
+  - intent: help_up
+  - action: utter_man_okay
+  - intent: man_okay
+  - action: utter_Badge_Little_Helper
+  - intent: Badge_Little_Helper
+  - action: utter_park_home
+
+- story: park story 3
+  steps:
+  - intent: go_park
+  - action: utter_park_do_next
+  - intent: build_sand_castle
+  - action: utter_when_build
+  - intent: when_build
+  - action: utter_clean_up
+  - intent: clean_up
+  - action: utter_pick_trash
+  - intent: pick_trash
+  - action: utter_woman_sees
+  - intent: woman_sees
+  - action: utter_Badge_Nature_lover
+  - intent: Badge_Nature_lover
+  - action: utter_park_home

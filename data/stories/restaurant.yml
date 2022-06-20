@@ -1,0 +1,60 @@
+stories:
+
+- story: restaurant story 1
+  steps:
+  - intent: go_restaurant
+  - action: utter_restaurant_do_next
+  - intent: eat_hamburger
+  - action: utter_sees_wallet
+  - intent: sees_wallet
+  - action: utter_wallet_red
+  - intent: wallet_red
+  - action: utter_brings_wallet
+  - intent: brings_wallet
+  - action: utter_stand_says
+  - intent: stand_says
+  - action: utter_found_it
+  - intent: found_it
+  - action: utter_Badge_Honesty
+  - intent: Badge_Honesty
+  - action: utter_restaurant_home
+
+- story: restaurant story 2
+  steps:
+  - intent: go_restaurant
+  - action: utter_restaurant_do_next
+  - intent: eat_bento
+  - action: utter_in_lunch_box
+  - intent: in_lunch_box
+  - action: utter_man_tall
+  - intent: man_tall
+  - action: utter_find_man
+  - intent: find_man
+  - action: utter_buy_box
+  - intent: buy_box
+  - action: utter_man_happy
+  - intent: man_happy
+  - action: utter_thanks_tony
+  - intent: thanks_tony
+  - action: utter_Badge_Goodwill
+  - intent: Badge_Goodwill
+  - action: utter_restaurant_home
+
+- story: restaurant story 3
+  steps:
+  - intent: go_restaurant
+  - action: utter_restaurant_do_next
+  - intent: eat_ramen
+  - action: utter_on_floor
+  - intent: on_floor
+  - action: utter_soup_all
+  - intent: soup_all
+  - action: utter_good_hurt
+  - intent: good_hurt
+  - action: utter_help_staff
+  - intent: help_staff
+  - action: utter_tony_help
+  - intent: tony_help
+  - action: utter_decide_give
+  - intent: decide_give
+  - action: utter_restaurant_home
