@@ -1,0 +1,242 @@
+version: "3.1"
+nlu:
+- intent: go_jogging
+  examples: |
+    - go jogging
+- intent: eat_hamburger
+  examples: |
+    - he wants to eat [hamburger](food)
+- intent: wallet_red
+  examples: |
+    - The wallet is red and long
+- intent: eat_ramen
+  examples: |
+    - eat [Ramen](food)
+- intent: snack_shelf
+  examples: |
+    - At snack shelf
+- intent: drinks_shelf
+  examples: |
+    - At the drinks shelf
+- intent: go_park
+  examples: |
+    - I want to go to the [park](location)
+- intent: yellow_dog
+  examples: |
+    - The puppy is yellow dog
+- intent: big_eyes
+  examples: |
+    - It has big eyes and ears
+- intent: fall_downing
+  examples: |
+    - An old man next to him fall down
+- intent: man_wears
+  examples: |
+    - The old man wears the blue shirt and black pants
+- intent: help_up
+  examples: |
+    - Jack quickly helps him up
+- intent: clean_up
+  examples: |
+    - Sam goes to clean up
+- intent: woman_sees
+  examples: |
+    - When he is cleaning the sandpit the woman sees him
+- intent: found_it
+  examples: |
+    - That's my wallet! You found it! Thank you!
+- intent: man_tall
+  examples: |
+    - The man tall and skinny
+- intent: find_man
+  examples: |
+    - After finding out the homeless man did no eat anything for days
+- intent: on_floor
+  examples: |
+    - At a ramen shop, a staff member sprinkles ramen noodles on the floor
+- intent: soup_all
+  examples: |
+    - The soup and noodles are on the floor
+- intent: good_hurt
+  examples: |
+    - It is good that no one is hurt
+- intent: buy_goods
+  examples: |
+    - buy [goods](item)
+- intent: buy_snacks
+  examples: |
+    - buy [snack](item)
+- intent: buy_drinks
+  examples: |
+    - buy the [drinks](item)
+- intent: run_right
+  examples: |
+    - The boy runs to his mom right away
+- intent: bot_challenge
+  examples: |
+    - are you a human?
+- intent: lose_puppy
+  examples: |
+    - It's lost puppy
+- intent: find_owner
+  examples: |
+    - Mark decides to help it find owner
+- intent: Badge_Kindness
+  examples: |
+    - the owner give him badge of kindness
+- intent: man_okay
+  examples: |
+    - Luckily the old man was fine
+- intent: Badge_Little_Helper
+  examples: |
+    - The old man thanked Jack for his help and gives him the Badge of Little Helper
+- intent: build_sand_castle
+  examples: |
+    - build the sand castle
+- intent: pick_trash
+  examples: |
+    - He picks up a trash bag and a paper bag
+- intent: Badge_Nature_lover
+  examples: |
+    - She thinks Sam is a good kid so she gives him the badge of nature lover
+- intent: sees_wallet
+  examples: |
+    - After Tony sat down, he saw a wallet on the seat.
+- intent: brings_wallet
+  examples: |
+    - Tony bring wallet to the counter
+- intent: Badge_Honesty
+  examples: |
+    - The man give Tony the badge of honesty to thank him
+- intent: eat_bento
+  examples: |
+    - eat [bento](food)
+- intent: in_lunch_box
+  examples: |
+    - Right in front of Lunch box shop Tony see homeless man walk around
+- intent: buy_box
+  examples: |
+    - Tony bought him a bento
+- intent: man_happy
+  examples: |
+    - The man was very happy
+- intent: help_staff
+  examples: |
+    - Tony got up from his seat and helped the staff clean the floor
+- intent: tony_help
+  examples: |
+    - The staff is thankful of Tony help
+- intent: decide_give
+  examples: |
+    - and decided to give Tony the badge of kindness
+- intent: goods_shelf
+  examples: |
+    - At the daily goods shelf
+- intent: moving_boxes
+  examples: |
+    - Tom saw a salesman carrying boxes into the warehouse
+- intent: pick_small
+  examples: |
+    - So Tom helped her pick up the little box
+- intent: look_around
+  examples: |
+    - Tom see man looking around for something
+- intent: boy_cry
+  examples: |
+    - Tom sees a boy crying
+- intent: green_shirt
+  examples: |
+    - boy wear a green t-shirt and blue pants
+- intent: sad_see
+  examples: |
+    - He's very sad and wants see his mom
+- intent: take_boy
+  examples: |
+    - Tom takes boy to the service counter
+- intent: happy_thank
+  examples: |
+    - The boy's family happy and thanks Tom
+- intent: looking_around
+  examples: |
+    - After a few minutes, Mark sees man looking around.
+- intent: when_jogging
+  examples: |
+    - When Jack is jogging he hears sound
+- intent: when_build
+  examples: |
+    - When Sam builds a sandcastle, he sees a lot of trash in the bunker
+- intent: go_restaurant
+  examples: |
+    - I want to go [restaurant](location)
+- intent: stand_says
+  examples: |
+    - the man standing at counter say
+- intent: thanks_tony
+  examples: |
+    - He thanks Tony for helping him
+- intent: go_supermarket
+  examples: |
+    - I want to go to the [supermarket](location)
+- intent: lot_box
+  examples: |
+    - She had a lot of boxes in her hand
+- intent: box_falls
+  examples: |
+    - “Oh-O”! One small box falls off from her hands
+- intent: not_pick
+  examples: |
+    - salesman can't pick it up
+- intent: little_badge
+  examples: |
+    - salesman thanks Tom for his help she gave Tom the Badge of 'Little helper'
+- intent: potato
+  examples: |
+    - The man wanted potato chips and chocolate, but he couldn't find them
+- intent: find_snacks
+  examples: |
+    - Tom helps him find the snacks
+- intent: big_smile
+  examples: |
+    - The man had a big smile on his face after finding the snack he wanted
+- intent: Badge_Superhero
+  examples: |
+    - They give Tom the Badge of Superhero
+- intent: affirm
+  examples: |
+    - of course
+- intent: Badge_Goodwill
+  examples: |
+    - so he gives Tony the Badge of Goodwill
+- intent: deny
+  examples: |
+    - no way
+- intent: dog_owner
+  examples: |
+    - wow he is dog's owner
+- intent: thank_mark
+  examples: |
+    - order to thank Mark mark his help
+- intent: Badge_of_Kindness
+  examples: |
+    - He want to thank Tom for his help so he gives Tom the Badge of Kindness
+- intent: wait_there
+  examples: |
+    - The boy's Mom is wait there
+- intent: play_slide
+  examples: |
+    - play the slide
+- intent: goodbye
+  examples: |
+    - bye
+- intent: greet
+  examples: |
+    - good morning
+- intent: when_playing
+  examples: |
+    - when Mark is playing, he hears a sound from the grass
+- intent: mood_great
+  examples: |
+    - so so perfect
+- intent: mood_unhappy
+  examples: |
+    - I don't feel very well
